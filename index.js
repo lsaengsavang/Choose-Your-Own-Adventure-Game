@@ -14,7 +14,13 @@ Do you follow it, or continue on your path?`)
 
         } else if(secondAnswer === 'continue') {
             let thirdAnswer = window.prompt(`You come across a chamber that reaches upward to a shining light above. There is a long, winding staircase, and a much quicker, but rickety-looking ladder that leads up toward the light. Which do you take?`)
-        }
+            if (thirdAnswer === 'ladder') {
+                let fourthAnswer = window.prompt(`After ascending a few feet up the ladder, one of its rungs snaps, and you comedically fall through each of the rungs below. Sheepish, you return home.`)
+            } else if(thirdAnswer === 'staircase') {
+                let fourthAnswer = window.prompt(`After ascending the staircase, you discover a shiny blue stone, which you take home and cherish forever.`)
+            }
+
+        } 
 
 } else if(firstAnswer === 'right') {
     let secondAnswer = window.prompt(`You come across a snoring dragon. 
